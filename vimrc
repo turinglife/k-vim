@@ -1,4 +1,13 @@
 "==========================================
+" Author:  turinglife
+" 在原始版本上增加一些个性化的配置。
+
+" 1. ctrl+left/ctrl+right：改变window的大小
+" 2. 屏蔽了hjkl键，使用箭头来移动光标在normal模式下。
+"==========================================
+
+
+"==========================================
 " Author:  wklken
 " Version: 9.0
 " Email: wklken@yeah.net
@@ -286,10 +295,10 @@ endif
 " 主要按键重定义
 
 " 关闭方向键, 强迫自己用 hjkl
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+" map <Left> <Nop>
+" map <Right> <Nop>
+" map <Up> <Nop>
+" map <Down> <Nop>
 
 "Treat long lines as break lines (useful when moving around in them)
 "se swap之后，同物理行上线直接跳
@@ -624,3 +633,9 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
+
+
+" ============================= turinglife's personal configuration =========================================
+" ctrl+left/ctrl+right 改变窗口的大小
+map <C-left> :vertical resize -5<cr>
+map <C-right> :vertical resize +5<cr>
