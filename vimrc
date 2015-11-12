@@ -4,6 +4,10 @@
 
 " 1. ctrl+left/ctrl+right：改变window的大小
 " 2. 屏蔽了hjkl键，使用箭头来移动光标在normal模式下。
+
+" ctrl-y moves screen up one line
+" ctrl-e moves screen down one line
+
 "==========================================
 
 
