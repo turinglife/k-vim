@@ -4,9 +4,13 @@
 
 " 1. ctrl+left/ctrl+right：改变window的大小
 " 2. 屏蔽了hjkl键，使用箭头来移动光标在normal模式下。
+" 3. 重新映射了ctrl-c和ctrl-y
 
+" new mapping for ctrl-y and ctrl-e
 " ctrl-y moves screen up one line
 " ctrl-e moves screen down one line
+" nnoremap <C-down> 2<C-e>
+" nnoremap <C-up> 2<C-y>
 
 "==========================================
 
@@ -485,9 +489,11 @@ cmap w!! w !sudo tee >/dev/null %
 inoremap kj <Esc>
 
 " 滚动Speed up scrolling of the viewport slightly
-nnoremap <C-e> 2<C-e>
-nnoremap <C-y> 2<C-y>
+" nnoremap <C-e> 2<C-e>
+" nnoremap <C-y> 2<C-y>
 
+nnoremap <C-down> 2<C-e>
+nnoremap <C-up> 2<C-y>
 
 "Jump to start and end of line using the home row keys
 " 增强tab操作, 导致这个会有问题, 考虑换键
