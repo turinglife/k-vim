@@ -6,6 +6,12 @@
 " 2. 屏蔽了hjkl键，使用箭头来移动光标在normal模式下。
 " 3. 重新映射了ctrl-c和ctrl-y
 
+" If you suffer from this message when using VIM 'you need to compile YCM before using it. Read the docs'
+" solution to fix the above problem is the following two lines.
+
+" first step: cd ~/.vim/bundle/YouCompleteMe
+" second step: ./install.py
+
 " new mapping for ctrl-y and ctrl-e
 " ctrl-y moves screen up one line
 " ctrl-e moves screen down one line
